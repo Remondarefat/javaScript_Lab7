@@ -1,0 +1,82 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(168, 236, 243);
+    height: 100vh;
+    flex-direction: column;
+}
+
+#watchContainer , .content , button {
+    display: flex;
+    align-items: center;
+
+}
+#watchContainer {
+    background-color: rgba(128, 128, 128, 0.491);
+    border-radius: 10px;
+    width: 500px;
+    padding: 30px;
+    flex-direction: column;
+    min-height: 75vh;
+
+}
+#watchContainer .content{
+    width: 100%;
+    justify-content: space-between;
+
+}
+
+#watchContainer .content .watchParts {
+    padding: 10px 20px ;
+    /* border:1px solid #999; */
+    /* border-radius: 10px; */
+    width: 30%;
+    
+}
+#watchContainer .content .watchParts select {
+    outline: none;
+    border: none;
+    height: 50px;
+    width: 100%;
+    font-size: 19px;
+    margin: 5px;
+    background-color: azure;
+    border-radius: 10px
+}
+#watchContainer button {
+width: 100%;
+margin-top: 20px;
+font-size: 20px;
+}
+
+/* !---------------------Style For Toggle Buttun----------------- */
+.toggle-button {
+    display: inline-block;
+    width: 60px;
+    height: 30px;
+    background: #c9c9c9;
+    border-radius: 30px;
+    position: relative;
+    cursor: pointer;
+}
+.toggle-button input[type="checkbox"] {
+    display: none;
+}
+.toggle-button label {
+    display: block;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background: #ffffff;
+    position: absolute;
+    top: 3px;
+    left: 3px;
+    box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+}
+.toggle-button input[type="checkbox"]:checked + label {
+    left: 33px;
+}
