@@ -77,7 +77,6 @@ addAlarmBtn.addEventListener('click' , function(eventInfo){
             addAlarmBtn.parentNode.insertBefore(p, addAlarmBtn.nextSibling);
         }
         else{
-
             alarmStore.push(time);
             alarmTime=time;
             displayAlarm();
@@ -120,6 +119,8 @@ function myFunction() {
     } else {
         toggleBtn.style.backgroundColor="lightblue";
         ringTone.pause();
+        ringTone.loop=false;
+        
     }
 }
 function DeletAlarm(i){
